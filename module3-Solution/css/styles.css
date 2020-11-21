@@ -77,6 +77,10 @@ p {
 	color: solid black;
 	font-style: cursive;
 }
+p a{
+	color:blue;
+	text-decoration: underline;
+}
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
