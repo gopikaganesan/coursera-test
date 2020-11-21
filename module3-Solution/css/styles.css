@@ -1,0 +1,143 @@
+* {
+	box-sizing: border-box;
+	font-family: cursive;
+	color: black;
+}
+
+#header-nav {
+	background-color: grey;
+	border-radius: 0;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	padding-bottom: 0px;
+}
+
+.navbar-brand h1 { /* Food, LLC */
+  font-family: cursive;
+  color: black;
+  font-size: 1.5em;
+  margin-top: 8px;
+  margin-bottom: 5px;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+#nav-list {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+#nav-list a {
+  color: black;
+  text-align: center;
+  background: white; 
+  border-top:1.5px solid black;
+}
+#nav-list a:hover {
+  background: #D3D3D1;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 2px solid black;
+}
+.navbar {
+	margin-bottom: 20px;
+	border:none;
+}
+
+/** Main content **/
+
+h2,h3{
+	font-family: cursive;
+  	color: black;
+	text-align: center;
+	margin-top: 8px; 
+}
+ h2{
+ 	margin-top: 4px;
+ 	margin-bottom: 4px; 
+ }
+
+ #box1,#box2,#box3{
+	background-color: grey;
+	margin: 10px;
+	margin-top: 20px;
+	margin-bottom: 30px: 
+	height: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 8px;
+	padding-top: 2px;
+		
+}
+
+p {
+	color: solid black;
+	font-style: cursive;
+}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+	#nav-list a{
+		display: none;
+	}
+	.collapse{
+		margin-bottom: 20px;
+	}
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+	#nav-list a{
+		display: none;
+	}
+		.collapse{
+		margin-bottom: 20px;
+	}
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+		#nav-list a{
+		display: none;
+	}
+		.collapse{
+		margin-bottom: 20px;
+	}
+
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+    padding-bottom: 0px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+
+ .navbar{
+ 	margin:0px;
+ }
+
+ h2{
+ 	margin-top: 8px;
+ 	font-size: 5vw;
+ }
+
+ h3 {
+ 	margin-top: 4px;
+ 	font-size: 4vw;
+ }
+}
